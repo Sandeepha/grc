@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no Demo) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>GRC Project</td>
+              <td>Demo</td>
+            <td>21 Aug 2019, 18:47</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Duration</th>
+            <th>Average</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">AccountStepDefination.iClickonnewsaleopportunity()</td>
+              <td>18</td>
+              <td class="duration" data-value="95756525218">1m 35s 756ms</td>
+              <td class="duration" data-value="5319806956">5s 319ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AccountStepDefination.iGotoopportunitestab()</td>
+              <td>18</td>
+              <td class="duration" data-value="11524209817">11s 524ms</td>
+              <td class="duration" data-value="640233878">640ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AccountStepDefination.iWillsearchfortheexistingaccountfromlist()</td>
+              <td>18</td>
+              <td class="duration" data-value="293203234687">4m 53s 203ms</td>
+              <td class="duration" data-value="16289068593">16s 289ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BaseStepDefination.iHaveValidApplicationUR()</td>
+              <td>18</td>
+              <td class="duration" data-value="93661890671">1m 33s 661ms</td>
+              <td class="duration" data-value="5203438370">5s 203ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BaseStepDefination.iLoginasaprofileuser()</td>
+              <td>18</td>
+              <td class="duration" data-value="424096059248">7m 4s 096ms</td>
+              <td class="duration" data-value="23560892180">23s 560ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BaseStepDefination.iLoginasaprofileuser1()</td>
+              <td>3</td>
+              <td class="duration" data-value="55576441402">55s 576ms</td>
+              <td class="duration" data-value="18525480467">18s 525ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BaseStepDefination.iLoginwithvalidcredentials()</td>
+              <td>18</td>
+              <td class="duration" data-value="193426963175">3m 13s 426ms</td>
+              <td class="duration" data-value="10745942398">10s 745ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BaseStepDefination.iShouldbeabletoseethehomepage()</td>
+              <td>18</td>
+              <td class="duration" data-value="132310304161">2m 12s 310ms</td>
+              <td class="duration" data-value="7350572453">7s 350ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BaseStepDefination.iWillclickonAccountstab()</td>
+              <td>18</td>
+              <td class="duration" data-value="63220020718">1m 3s 220ms</td>
+              <td class="duration" data-value="3512223373">3s 512ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">ChatterStepDefination.clickAcceptBtnInChatterPage()</td>
+              <td>4</td>
+              <td class="duration" data-value="59807525335">59s 807ms</td>
+              <td class="duration" data-value="14951881333">14s 951ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CucumberSetup.setUp(Scenario)</td>
+              <td>18</td>
+              <td class="duration" data-value="57169077593">57s 169ms</td>
+              <td class="duration" data-value="3176059866">3s 176ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CucumberSetup.tearDown(Scenario)</td>
+              <td>18</td>
+              <td class="duration" data-value="35952879959">35s 952ms</td>
+              <td class="duration" data-value="1997382219">1s 997ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">OpportunitiesStepDefination.Validateoptycreatedsuccessfully()</td>
+              <td>1</td>
+              <td class="duration" data-value="1097757306">1s 097ms</td>
+              <td class="duration" data-value="1097757306">1s 097ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">OpportunitiesStepDefination.addProducts()</td>
+              <td>17</td>
+              <td class="duration" data-value="913838622892">15m 13s 838ms</td>
+              <td class="duration" data-value="53755213111">53s 755ms</td>
+              <td class="failed">88.24%</td>
+            </tr>
+                      <tr>
+              <td class="location">OpportunitiesStepDefination.createGRCFreeTrailOppotunity()</td>
+              <td>11</td>
+              <td class="duration" data-value="169940967715">2m 49s 940ms</td>
+              <td class="duration" data-value="15449178883">15s 449ms</td>
+              <td class="failed">90.91%</td>
+            </tr>
+                      <tr>
+              <td class="location">OpportunitiesStepDefination.iCreateanewopty()</td>
+              <td>18</td>
+              <td class="duration" data-value="370535768112">6m 10s 535ms</td>
+              <td class="duration" data-value="20585320450">20s 585ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">OpportunitiesStepDefination.iWillAddPrimarycontactinContactRoles()</td>
+              <td>17</td>
+              <td class="duration" data-value="223677733736">3m 43s 677ms</td>
+              <td class="duration" data-value="13157513749">13s 157ms</td>
+              <td class="failed">88.24%</td>
+            </tr>
+                      <tr>
+              <td class="location">OpportunitiesStepDefination.iWillCreatenewGRCPricebook()</td>
+              <td>18</td>
+              <td class="duration" data-value="281085292997">4m 41s 085ms</td>
+              <td class="duration" data-value="15615849610">15s 615ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">OpportunitiesStepDefination.iWillGotoQuotesrelatedtab()</td>
+              <td>16</td>
+              <td class="duration" data-value="73001379728">1m 13s 001ms</td>
+              <td class="duration" data-value="4562586233">4s 562ms</td>
+              <td class="failed">87.50%</td>
+            </tr>
+                      <tr>
+              <td class="location">QuotePageStepDefination.approveAll()</td>
+              <td>1</td>
+              <td class="duration" data-value="51228849829">51s 228ms</td>
+              <td class="duration" data-value="51228849829">51s 228ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">QuotePageStepDefination.approveAllCAA()</td>
+              <td>1</td>
+              <td class="duration" data-value="48439695952">48s 439ms</td>
+              <td class="duration" data-value="48439695952">48s 439ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">QuotePageStepDefination.approveCA()</td>
+              <td>1</td>
+              <td class="duration" data-value="46948316032">46s 948ms</td>
+              <td class="duration" data-value="46948316032">46s 948ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">QuotePageStepDefination.createOrderFormSendToClient()</td>
+              <td>1</td>
+              <td class="duration" data-value="164339728586">2m 44s 339ms</td>
+              <td class="duration" data-value="164339728586">2m 44s 339ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">QuotePageStepDefination.iWillcreateanewFreeTrialQuote()</td>
+              <td>10</td>
+              <td class="duration" data-value="111354791631">1m 51s 354ms</td>
+              <td class="duration" data-value="11135479163">11s 135ms</td>
+              <td class="failed">90.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">QuotePageStepDefination.iWillcreateanewQuote()</td>
+              <td>6</td>
+              <td class="duration" data-value="72391620916">1m 12s 391ms</td>
+              <td class="duration" data-value="12065270152">12s 065ms</td>
+              <td class="failed">83.33%</td>
+            </tr>
+                      <tr>
+              <td class="location">QuotePageStepDefination.loginAsGamApprover()</td>
+              <td>4</td>
+              <td class="duration" data-value="108031459517">1m 48s 031ms</td>
+              <td class="duration" data-value="27007864879">27s 007ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">QuotePageStepDefination.sendTheDocs()</td>
+              <td>1</td>
+              <td class="duration" data-value="12389671309">12s 389ms</td>
+              <td class="duration" data-value="12389671309">12s 389ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">QuotePageStepDefination.submitFreeTrialQuoteForApproval()</td>
+              <td>9</td>
+              <td class="duration" data-value="215775938039">3m 35s 775ms</td>
+              <td class="duration" data-value="23975104226">23s 975ms</td>
+              <td class="failed">88.89%</td>
+            </tr>
+                      <tr>
+              <td class="location">QuotePageStepDefination.submitQuoteForApproval()</td>
+              <td>5</td>
+              <td class="duration" data-value="119672137352">1m 59s 672ms</td>
+              <td class="duration" data-value="23934427470">23s 934ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">QuotePageStepDefination.submitQuoteForFullfilment()</td>
+              <td>5</td>
+              <td class="duration" data-value="61696092281">1m 1s 696ms</td>
+              <td class="duration" data-value="12339218456">12s 339ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">QuotePageStepDefination.submitQuoteForFullfilmentOrderForm()</td>
+              <td>1</td>
+              <td class="duration" data-value="16082152431">16s 082ms</td>
+              <td class="duration" data-value="16082152431">16s 082ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>31</td>
+            <td>330</td>
+            <td class="duration">1h 16m 17s 233ms</td>
+            <td class="duration">13s 870ms</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

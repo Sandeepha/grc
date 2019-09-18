@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Chrome_Regression" duration-ms="2670492" started-at="2019-08-29T12:52:30Z" finished-at="2019-08-29T13:37:00Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="2670492" started-at="2019-08-29T12:52:30Z" finished-at="2019-08-29T13:37:00Z">
+      <class name="com.sc.testrunner.TestNGTestRunner">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sc.testrunner.TestNGTestRunner@11758f2a]" name="setUp" is-config="true" duration-ms="79" started-at="2019-08-29T18:22:30Z" finished-at="2019-08-29T18:22:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome_Regression]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[QA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="runFeatures(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sc.testrunner.TestNGTestRunner@11758f2a]" name="runFeatures" duration-ms="2669528" started-at="2019-08-29T18:22:31Z" data-provider="featureList" finished-at="2019-08-29T19:07:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/features/GRC_Regression_Opportunity.feature]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@Accounts]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runFeatures -->
+        <test-method status="PASS" signature="runFeatures(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sc.testrunner.TestNGTestRunner@11758f2a]" name="runFeatures" duration-ms="15" started-at="2019-08-29T19:07:00Z" data-provider="featureList" finished-at="2019-08-29T19:07:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/features/GRC_Smoke.feature]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@Accounts]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runFeatures -->
+        <test-method status="PASS" signature="runFeatures(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sc.testrunner.TestNGTestRunner@11758f2a]" name="runFeatures" duration-ms="0" started-at="2019-08-29T19:07:00Z" data-provider="featureList" finished-at="2019-08-29T19:07:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/features/GRC_Regression_Quote.feature]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runFeatures -->
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.sc.testrunner.TestNGTestRunner@11758f2a]" name="generateReport" is-config="true" duration-ms="4760" started-at="2019-08-29T19:07:00Z" finished-at="2019-08-29T19:07:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- com.sc.testrunner.TestNGTestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Chrome_Regression -->
+</testng-results>

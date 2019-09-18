@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Chrome_Smoke]">
+  <parameter name="environment" value="QA"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="suitename" value="Chrome_Smoke"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.sc.testrunner.TestNGTestRunner">
+        <methods>
+          <include name="runFeatures" invocation-numbers="2"/>
+          <include name="setUp"/>
+          <include name="generateReport"/>
+        </methods>
+      </class> <!-- com.sc.testrunner.TestNGTestRunner -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Chrome_Smoke] -->

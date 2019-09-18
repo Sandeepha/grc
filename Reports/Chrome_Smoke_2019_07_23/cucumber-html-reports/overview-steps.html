@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no Demo) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>GRC Project</td>
+              <td>Demo</td>
+            <td>23 Jul 2019, 17:07</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Duration</th>
+            <th>Average</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">AccountStepDefination.iClickonnewsaleopportunity()</td>
+              <td>2</td>
+              <td class="duration" data-value="9289470205">9s 289ms</td>
+              <td class="duration" data-value="4644735102">4s 644ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AccountStepDefination.iGotoopportunitestab()</td>
+              <td>2</td>
+              <td class="duration" data-value="977739568">977ms</td>
+              <td class="duration" data-value="488869784">488ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AccountStepDefination.iWillsearchfortheexistingaccountfromlist()</td>
+              <td>2</td>
+              <td class="duration" data-value="28101588403">28s 101ms</td>
+              <td class="duration" data-value="14050794201">14s 050ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BaseStepDefination.iHaveValidApplicationUR()</td>
+              <td>2</td>
+              <td class="duration" data-value="7943006368">7s 943ms</td>
+              <td class="duration" data-value="3971503184">3s 971ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BaseStepDefination.iLoginasaprofileuser()</td>
+              <td>2</td>
+              <td class="duration" data-value="40598420012">40s 598ms</td>
+              <td class="duration" data-value="20299210006">20s 299ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BaseStepDefination.iLoginwithvalidcredentials()</td>
+              <td>2</td>
+              <td class="duration" data-value="5266647908">5s 266ms</td>
+              <td class="duration" data-value="2633323954">2s 633ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BaseStepDefination.iShouldbeabletoseethehomepage()</td>
+              <td>2</td>
+              <td class="duration" data-value="22206051574">22s 206ms</td>
+              <td class="duration" data-value="11103025787">11s 103ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BaseStepDefination.iWillclickonAccountstab()</td>
+              <td>2</td>
+              <td class="duration" data-value="5422781248">5s 422ms</td>
+              <td class="duration" data-value="2711390624">2s 711ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CucumberSetup.setUp(Scenario)</td>
+              <td>2</td>
+              <td class="duration" data-value="10355995945">10s 355ms</td>
+              <td class="duration" data-value="5177997972">5s 177ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CucumberSetup.tearDown(Scenario)</td>
+              <td>2</td>
+              <td class="duration" data-value="3349011373">3s 349ms</td>
+              <td class="duration" data-value="1674505686">1s 674ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">OpportunitiesStepDefination.addProducts()</td>
+              <td>2</td>
+              <td class="duration" data-value="58680379665">58s 680ms</td>
+              <td class="duration" data-value="29340189832">29s 340ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">OpportunitiesStepDefination.createGRCFreeTrailOppotunity()</td>
+              <td>2</td>
+              <td class="duration" data-value="31556896798">31s 556ms</td>
+              <td class="duration" data-value="15778448399">15s 778ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">OpportunitiesStepDefination.iCreateanewopty()</td>
+              <td>2</td>
+              <td class="duration" data-value="36574555907">36s 574ms</td>
+              <td class="duration" data-value="18287277953">18s 287ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">OpportunitiesStepDefination.iWillAddPrimarycontactinContactRoles()</td>
+              <td>2</td>
+              <td class="duration" data-value="25883166903">25s 883ms</td>
+              <td class="duration" data-value="12941583451">12s 941ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">OpportunitiesStepDefination.iWillCreatenewGRCPricebook()</td>
+              <td>2</td>
+              <td class="duration" data-value="28805745354">28s 805ms</td>
+              <td class="duration" data-value="14402872677">14s 402ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">OpportunitiesStepDefination.iWillGotoQuotesrelatedtab()</td>
+              <td>2</td>
+              <td class="duration" data-value="9196632107">9s 196ms</td>
+              <td class="duration" data-value="4598316053">4s 598ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">QuotePageStepDefination.iWillcreateanewFreeTrialQuote()</td>
+              <td>2</td>
+              <td class="duration" data-value="23861027126">23s 861ms</td>
+              <td class="duration" data-value="11930513563">11s 930ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">QuotePageStepDefination.submitFreeTrialQuoteForApproval()</td>
+              <td>2</td>
+              <td class="duration" data-value="51790379561">51s 790ms</td>
+              <td class="duration" data-value="25895189780">25s 895ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">QuotePageStepDefination.submitQuoteForFullfilment()</td>
+              <td>1</td>
+              <td class="duration" data-value="12038863929">12s 038ms</td>
+              <td class="duration" data-value="12038863929">12s 038ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>19</td>
+            <td>37</td>
+            <td class="duration">6m 51s 898ms</td>
+            <td class="duration">11s 132ms</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
